@@ -1,0 +1,30 @@
+{
+  "name": "web-service-anwo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IPY5101-003D-Grupo-2/web-service-anwo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IPY5101-003D-Grupo-2/web-service-anwo/issues"
+  },
+  "homepage": "https://github.com/IPY5101-003D-Grupo-2/web-service-anwo#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "monk": "^7.3.3",
+    "morgan": "^1.10.0",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
