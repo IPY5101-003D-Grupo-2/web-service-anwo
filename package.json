@@ -5,7 +5,7 @@
   "main": "index.js",
   "apidoc": {
     "title": "Anwo web service",
-    "url" : "localhost:1337"
+    "url" : "https://anwo-web-service.herokuapp.com"
   },
   "scripts": {
     "start": "node index.js",
