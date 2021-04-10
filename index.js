@@ -27,29 +27,29 @@ app.use(express.static('./doc'));
  *  {
  *   "productos": [
  *      {
- *     "url": "https://www.anwo.cl/unidad-interior-tipo--multisplit-muro-12.000-btuh-r410a/ficha_nueva.html?p=50898&c=2804&u=5",
- *     "nombre": "UNIDAD INTERIOR TIPO MULTISPLIT MURO 12.000 BTUH R410A",
- *     "tipo": "Aire acondicionado",
- *     "sku": "GES12-FM",
- *     "precio": 319,
- *     "caracteristicas": "\"Unidad Evaporadora de presentacion muro, Capacidad de Frío 12000 BTUH del Tipo INVERTER. Alimentacion Monofasica 220V/50HZ.  Incluye Kit de Cañeria de 4 mt. y control remoto Inalambrico. \"",
- *     "modelo": "GES12-FM",
- *     "modo_operacion": "FRIO / CALOR",
- *     "alimentacion_electrica": "220-240/50/1",
- *     "consumo_electrico": 20,
- *     "capacidad_nominal": "11900/12500",
- *     "caudal_aire": "660/540/460/330",
- *     "nivel_ruido": "42/39/33/26",
- *     "dimensiones": "845/209/289",
- *     "peso_neto": 10,
- *     "modelo_kit_cañerias": "GKA/GEMS/FM1",
- *     "conexion_cañerias": "1/4 - 3/8",
- *     "ficha": "https://www.anwo.cl/files/prd_producto/50898/Original%20Ficha%20Free%20Match%202021.pdf",
- *     "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50898/GES07_FM.jpg",
- *     "stock": 100
+ *          "url": "https://www.anwo.cl/unidad-interior-tipo--multisplit-muro-12.000-btuh-r410a/ficha_nueva.html?p=50898&c=2804&u=5",
+ *          "nombre": "UNIDAD INTERIOR TIPO MULTISPLIT MURO 12.000 BTUH R410A",
+ *          "tipo": "Aire acondicionado",
+ *          "sku": "GES12-FM",
+ *          "precio": 319,
+ *          "caracteristicas": "\"Unidad Evaporadora de presentacion muro, Capacidad de Frío 12000 BTUH del Tipo INVERTER. Alimentacion Monofasica 220V/50HZ.  Incluye Kit de Cañeria de 4 mt. y control remoto Inalambrico. \"",
+ *          "modelo": "GES12-FM",
+ *          "modo_operacion": "FRIO / CALOR",
+ *          "alimentacion_electrica": "220-240/50/1",
+ *          "consumo_electrico": 20,
+ *          "capacidad_nominal": "11900/12500",
+ *          "caudal_aire": "660/540/460/330",
+ *          "nivel_ruido": "42/39/33/26",
+ *          "dimensiones": "845/209/289",
+ *          "peso_neto": 10,
+ *          "modelo_kit_cañerias": "GKA/GEMS/FM1",
+ *          "conexion_cañerias": "1/4 - 3/8",
+ *          "ficha": "https://www.anwo.cl/files/prd_producto/50898/Original%20Ficha%20Free%20Match%202021.pdf",
+ *          "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50898/GES07_FM.jpg",
+ *          "stock": 100
  *      }
- *   ]
- *
+ *    ]
+ *  }
  */
 app.get('/api/productos/all', async (req, res, next) => {
     try {
