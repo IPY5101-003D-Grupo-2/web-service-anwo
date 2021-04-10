@@ -1,8 +1,12 @@
 {
-  "name": "web-service-anwo",
+  "name": "anwo-web-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "Servicio web",
   "main": "index.js",
+  "apidoc": {
+    "title": "Anwo web service",
+    "url" : "localhost:1337"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"

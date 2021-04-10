@@ -1,4 +1,4 @@
-FROM node:12.18-alpine
+FROM node:14.16.1-alpine
 ENV NODE_ENV=production
 
 COPY ./.env .

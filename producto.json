@@ -1,4 +1,4 @@
-{
+[{
     "_id": {
         "$oid": "606fe86cd4492237817053a1"
     },
@@ -26,5 +26,306 @@
     "modelo_kit_cañerias": "GKA/GEMS/FM1",
     "conexion_cañerias": "1/4 - 3/8",
     "ficha": "https://www.anwo.cl/files/prd_producto/50898/Original%20Ficha%20Free%20Match%202021.pdf",
-    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50898/GES07_FM.jpg"
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50898/GES07_FM.jpg",
+    "stock": 100
 }
+,
+
+{
+    "_id": {
+        "$oid": ""
+    },
+    "url": "",
+    "nombre": "",
+    "tipo": "",
+    "sku": "",
+    "precio": {
+        "$numberDouble": ""
+    },
+    "caracteristicas": "",
+    "modelo": "",
+    "modo_operacion": "",
+    "alimentacion_electrica": "",
+    "consumo_electrico": {
+        "$numberDouble": ""
+    },
+    "capacidad_nominal": "",
+    "caudal_aire": "",
+    "nivel_ruido": "",
+    "dimensiones": "",
+    "peso_neto": {
+        "$numberDouble": ""
+    },
+    "modelo_kit_cañerias": "",
+    "conexion_cañerias": "",
+    "ficha": "",
+    "imagen": "",
+    "stock": 
+},
+
+{
+    "_id": {
+        "$oid": "607115c8f96604ec5cbb810b"
+    },
+    "url": "https://www.anwo.cl/purificador-de-aire-ultra/ficha_nueva.html?p=50783&c=2713&u=5",
+    "nombre": "PURIFICADOR DE AIRE ULTRA",
+    "tipo": "Aire Acondicionado",
+    "sku": "APURIFIED.02",
+    "precio": {
+        "$numberDouble": "4.298"
+    },
+    "caracteristicas": "\" Posee un eficiente sistema de filtración de aire, que en conjunto con su sistema tecnológico de tratamiento de alta temperatura pueden efectivamente capturar y eliminar varios tipos de Virus\"",
+    "modelo": "APURIFIED.02",
+    "modo_operacion": "ALTO/MEDIO/BAJO/AUTO",
+    "alimentacion_electrica": "220-230/50/1",
+    "consumo_electrico": {
+        "$numberDouble": "58"
+    },
+    "capacidad_nominal": "1940",
+    "caudal_aire": "No posee",
+    "nivel_ruido": "62",
+    "dimensiones": "370 x 423 x 1273",
+    "peso_neto": {
+        "$numberDouble": "36.6"
+    },
+    "modelo_kit_cañerias": "No posee",
+    "conexion_cañerias": "No posee",
+    "ficha": "https://www.anwo.cl/files/prd_producto/50783/Original%20Ficha%20Purificador%20de%20Aire%202020.pdf",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50783/Purificador%20de%20aire%20ultra_min.jpg",
+    "stock": 100 
+},
+
+{
+    "_id": {
+        "$oid": "607115ecf96604ec5cbb810c"
+    },
+    "url": "https://www.anwo.cl/eaa-24000-btuh-muro-virus-protect-inverter-bcalor-r410a/ficha_nueva.html?p=50824&c=2746&u=18",
+    "nombre": "EAA 24000 BTUH MURO VIRUS PROTECT INVERTER B/CALOR R410A",
+    "tipo": "Aire Acondicionado",
+    "sku": "GES24ECO-INV-VP",
+    "precio": {
+        "$numberDouble": "1.079"
+    },
+    "caracteristicas": "Blue Fin: Es un recubrimiento al intercambiador de la unidad condensadora,que evita la corrosión, en ambientes húmedos y salinos (ambientes más agresivos de lo normal) Función de Autodiagnóstico: Monitoreo constante de la unidad. En caso de falla, detiene y protege el sistema automáticamente. El código de protección o falla, es mostrado en el visor de la unidad interior. Reinicio Automático: En caso de corte de energía eleéctrica, el equipo vuelve a operar en la última posoción solicitada por el ususario. Su tecnología permite capturar material particulado PM2.5, encapsular virus y bacterias. Protección “Blue Fin” para unidad interior y exterior.",
+    "modelo": "GES24ECO-INV-VP",
+    "modo_operacion": "FRIO / CALOR",
+    "alimentacion_electrica": "220/50/1",
+    "consumo_electrico": {
+        "$numberDouble": "30"
+    },
+    "capacidad_nominal": "22028/23052",
+    "caudal_aire": "1150 / 750",
+    "nivel_ruido": "46/44/40/36",
+    "dimensiones": "1078/246/325",
+    "peso_neto": {
+        "$numberDouble": "17"
+    },
+    "modelo_kit_cañerias": "No posee",
+    "conexion_cañerias": "1/4 - 5/8",
+    "ficha": "https://www.anwo.cl/files/prd_producto/50824/Ficha%20AA%20Split%20muro%20Virus%20Protect.pdf",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50824/iver.jpg",
+    "stock": 100
+},
+
+{
+    "_id": {
+        "$oid": "607117b7e33809e56c9bcf88"
+    },
+    "url": "https://www.anwo.cl/eaa.-friocalor-18.000-btuh-r410a-eficiencia-clase-a/ficha_nueva.html?p=43453&c=1826&u=5",
+    "nombre": "EAA. FRIO/CALOR 18.000 BTUH R410A EFICIENCIA CLASE A",
+    "tipo": "Aire Acondicionado",
+    "sku": "GES18ECO-N",
+    "precio": {
+        "$numberDouble": "562"
+    },
+    "caracteristicas": "Cuenta con un diseño elegante y compacto, trabajan con Refrigerante Ecológico R410A, poseen Clase A de eficiencia energética y operan con un bajo consumo eléctrico tanto en Frio como en Calor, tambien posee Kit de Cañerías de 4 mt, cable de conexión eléctrica y de control entre unidades y garantía de 3 años. ",
+    "modelo": "GES18ECO-N",
+    "modo_operacion": "FRIO / CALOR",
+    "alimentacion_electrica": "220 / 50 / 1",
+    "consumo_electrico": {
+        "$numberDouble": "20"
+    },
+    "capacidad_nominal": "9050/9511",
+    "caudal_aire": "550/340/1600",
+    "nivel_ruido": "39/35/32/25",
+    "dimensiones": "790/200/275",
+    "peso_neto": {
+        "$numberDouble": "9"
+    },
+    "modelo_kit_cañerias": "No posee",
+    "conexion_cañerias": "15 / 10",
+    "ficha": "https://www.anwo.cl/files/prd_producto/43453/Original%20Ficha%20Split%20GesEco%202020.pdf",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/43453/ges9eco-n_size_555x432.jpg",
+    "stock": 100
+},
+
+
+{
+    "_id": {
+        "$oid": "60711819e33809e56c9bcf89"
+    },
+    "url": "https://www.anwo.cl/eaa-9000-btuh-muro-virus-protect-inverter-bcalor-r410a/ficha_nueva.html?p=50821&c=2746&u=18",
+    "nombre": "EAA 9000 BTUH MURO VIRUS PROTECT INVERTER B/CALOR R410A",
+    "tipo": "Aire Acondicionado",
+    "sku": "GES9ECO-INV-VP",
+    "precio": {
+        "$numberDouble": "528"
+    },
+    "caracteristicas": "Blue Fin: Es un recubrimiento al intercambiador de la unidad condensadora, que evita la corrosión, en ambientes húmedos y salinos (ambientes más agresivos de lo normal. Función de Autodiagnóstico: Monitoreo constante de la unidad. En caso de falla, detiene y protege el sistema automáticamente. El código de protección o falla, es mostrado en el visor de la unidad interior. Reinicio Automático: En caso de corte de energía eleéctrica, el equipo vuelve a operar en la última posoción solicitada por el ususario. Su tecnología permite capturar material particulado PM2.5, encapsular virus y bacterias. Protección “Blue Fin” para unidad interior y exterior.",
+    "modelo": "GES9ECO-INV-VP",
+    "modo_operacion": "FRIO / CALOR",
+    "alimentacion_electrica": "220 / 50 / 1",
+    "consumo_electrico": {
+        "$numberDouble": "20"
+    },
+    "capacidad_nominal": "9050/9511",
+    "caudal_aire": "550 / 340",
+    "nivel_ruido": "39/35/32/25",
+    "dimensiones": "790/200/275",
+    "peso_neto": {
+        "$numberDouble": "9"
+    },
+    "modelo_kit_cañerias": "No posee",
+    "conexion_cañerias": "1/4 - 3/8",
+    "ficha": "https://www.anwo.cl/files/prd_producto/50824/Ficha%20AA%20Split%20muro%20Virus%20Protect.pdf",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50821/iver.jpg",
+    "stock": 100
+},
+
+{
+    "_id": {
+        "$oid": "607118f0e33809e56c9bcf8a"
+    },
+    "url": "https://www.anwo.cl/(hasta-agotar-stock)-eaa.-friocalor-9.000-btuh-r410a-cool-design-inverter/ficha_nueva.html?p=43422&c=1822&u=5",
+    "nombre": "EAA. FRIO/CALOR 9.000 BTUH R410A COOL DESIGN INVERTER",
+    "tipo": "Aire Acondicionado",
+    "sku": "MESV9ECO-PLUS-INV",
+    "precio": {
+        "$numberDouble": "624"
+    },
+    "caracteristicas": "Equipo con tecnologia Inventer y  clase A de eficiencia energética. Operación con Refrigerante ecologico R410A. Panel Retroiluminado con control remoto inalámbrico con función de seguimiento Follow Me, suministro de aire con angulo con largo y amplio alcance. Equipo posee 4 kit de cañerias de 4 mt, cable de conexión eléctrica y control entre unidades ",
+    "modelo": "MESV9ECO-PLUS-INV",
+    "modo_operacion": "FRIO / CALOR",
+    "alimentacion_electrica": "220 / 50 / 1",
+    "consumo_electrico": {
+        "$numberDouble": "712"
+    },
+    "capacidad_nominal": "9000/10000",
+    "caudal_aire": "550 / 340",
+    "nivel_ruido": "400/240/2000",
+    "dimensiones": "897/182/321",
+    "peso_neto": {
+        "$numberDouble": "10,4"
+    },
+    "modelo_kit_cañerias": "No posee",
+    "conexion_cañerias": "1/4 - 3/8",
+    "ficha": "https://www.anwo.cl/files/prd_producto/43422/Original%20Ficha%20Cool%20Desing%202020.pdf",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_categoria/1822/COOL_DESING_INV.jpg",
+    "stock": 100
+},
+
+{
+    "_id": {
+        "$oid": "607119ede33809e56c9bcf8b"
+    },
+    "url": "https://www.anwo.cl/eaa-portatil-8.000-btu-solo-frio-r410a/ficha_nueva.html?p=38821&c=2081&u=5",
+    "nombre": "EAA PORTATIL 8.000 BTU SOLO FRIO R410A",
+    "tipo": "Aire Acondicionado",
+    "sku": "GPORT-8",
+    "precio": {
+        "$numberDouble": "292"
+    },
+    "caracteristicas": "Frío/Deshumid./Ventilación/Calor. Control remoto inalámbrico. Panel digital. Con ruedas para fácil traslado. Filtro, mejora la calidad del aire que recircula. Temporizador. Función Sleep",
+    "modelo": "GPORT-8",
+    "modo_operacion": "FRIO",
+    "alimentacion_electrica": "220 / 50 / 1",
+    "consumo_electrico": {
+        "$numberDouble": "895"
+    },
+    "capacidad_nominal": "8025",
+    "caudal_aire": "320 / 260",
+    "nivel_ruido": "51/49/47",
+    "dimensiones": "315/395/770",
+    "peso_neto": {
+        "$numberDouble": "24.5"
+    },
+    "modelo_kit_cañerias": "No posee",
+    "conexion_cañerias": "No posee",
+    "ficha": "https://www.anwo.cl/files/prd_producto/38821/OriginalFichaPortatilGPORT20.pdf",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_categoria/2081/aire_acondicionado_portatil.jpg",
+    "stock": 100
+},
+
+{
+    "_id": {
+        "$oid": "60711ad6e33809e56c9bcf8c"
+    },
+    "url": "https://www.anwo.cl/eaa.-portatil-friocalor--14000-btuh-r410a/ficha_nueva.html?p=50947&c=2081&u=5",
+    "nombre": "EAA. PORTATIL FRIO/CALOR 14000 BTUH R410A",
+    "tipo": "Aire Acondicionado",
+    "sku": "GPORT-14",
+    "precio": {
+        "$numberDouble": "482"
+    },
+    "caracteristicas": "Frío/Deshumid./Ventilación/Calor. Control remoto inalámbrico. Panel digital. Con ruedas para fácil traslado. Filtro, mejora la calidad del aire que recircula. Temporizador. Función Sleep",
+    "modelo": "GPORT-14",
+    "modo_operacion": "FRIO / CALOR",
+    "alimentacion_electrica": "220 / 50 / 1",
+    "consumo_electrico": {
+        "$numberDouble": "1322"
+    },
+    "capacidad_nominal": "13989/11600",
+    "caudal_aire": "360 / 300",
+    "nivel_ruido": "53/51/49",
+    "dimensiones": "390/405/820",
+    "peso_neto": {
+        "$numberDouble": "39"
+    },
+    "modelo_kit_cañerias": "No posee",
+    "conexion_cañerias": "No posee",
+    "ficha": "https://www.anwo.cl/files/prd_producto/38821/OriginalFichaPortatilGPORT20.pdf",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/50947/Gport%208_14.jpg",
+    "stock": 100 
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "_id": {
+        "$oid": "60711151f96604ec5cbb8109"
+    },
+    "url": "https://www.anwo.cl/aislante-lateral-atron/ficha_nueva.html?p=33336&c=2775&u=19",
+    "nombre": "AISLANTE LATERAL ATRON",
+    "tipo": "REPUESTO",
+    "sku": "D003202118",
+    "precio": {
+        "$numberDouble": "6.77"
+    },
+    "caracteristicas": "\"Componente con alta resistencia termica.\"",
+    "imagen": "https://res.cloudinary.com/wpchile/image/fetch/h_400,f_auto,fl_progressive/https://www.anwo.cl/files//prd_producto/33336/D003202118%2030.jpg",
+    "stock": 100
+}
+
+
+
+]
