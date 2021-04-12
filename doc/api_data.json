@@ -28,6 +28,93 @@
     "name": ""
   },
   {
+    "type": "post",
+    "url": "/api/comprar",
+    "title": "Comprar por sku",
+    "name": "ComprarPorSkuyCantidad",
+    "group": "Productos",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "sku",
+            "description": "<p>Código del producto.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "cantidad",
+            "description": "<p>Cantidad requerida mayor a 0.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id_cliente",
+            "description": "<p>Id de su empresa.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n{\n    mensaje: 'Venta realizada con éxito',\n    sku: 'ASD123',\n    cantidadComprada: 5,\n    stockDisponible: 995\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidRequest",
+            "description": "<p>La request no tiene la forma esperada.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ClienteNoEncontrado",
+            "description": "<p>La key de cliente no es válida.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ProductoNoEncontrado",
+            "description": "<p>El sku de producto no es válida.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "InvalidRequest:",
+          "content": "HTTP/1.1 404 InvalidRequest\n{\n  \"error\": \"Datos enviados no válidos\",\n}",
+          "type": "json"
+        },
+        {
+          "title": "ClienteNoEncontrado:",
+          "content": "HTTP/1.1 404 ClienteNoEncontrado\n{\n  \"error\": \"No eres un cliente válido\",\n}",
+          "type": "json"
+        },
+        {
+          "title": "ProductoNoEncontrado:",
+          "content": "HTTP/1.1 404 ProductoNoEncontrado\n{\n  \"error\": \"No existe el producto especificado con ese SKU\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "./index.js",
+    "groupTitle": "Productos"
+  },
+  {
     "type": "get",
     "url": "/api/productos/all",
     "title": "Traer catálogo de productos",

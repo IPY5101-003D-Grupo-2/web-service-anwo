@@ -9,13 +9,10 @@ const app = express();
 const db = monk(process.env.MONGO_URI);
 
 const productos = db.get('productos');
-
+const clientes = db.get('clientes');
 app.use(morgan('tiny'));
 app.use(express.json());
 app.use(express.static('./doc'));
-// app.get('/', async (req, res, next) => {
-//     res.render();
-// });
 
 /**
  * @api {get} /api/productos/all Traer catálogo de productos
@@ -51,22 +48,26 @@ app.use(express.static('./doc'));
  *    ]
  *  }
  */
-app.get('/api/productos/all', async (req, res, next) => {
-    try {
-        productos.find({}, { fields: { _id: 0 } }).then((doc) => {
-            res.json({
-                productos: doc,
+app.get(
+    '/api/productos/all',
+    async function traerTodosLosProductos(req, res, next) {
+        try {
+            productos.find({}, { fields: { _id: 0 } }).then((doc) => {
+                return res.json({
+                    productos: doc,
+                });
             });
-        });
-    } catch (error) {
-        next(error);
+        } catch (error) {
+            next(error);
+        }
     }
-});
+);
 
 /**
  * @api {get} /api/productos/sku/:sku Traer información de un producto por SKU
  * @apiName TraerUnProductoPorSku
  * @apiGroup Productos
+ *
  *
  * @apiSuccessExample Success-Response:
  *  HTTP/1.1 200 OK
@@ -103,18 +104,120 @@ app.get('/api/productos/all', async (req, res, next) => {
  *       "error": "No se ha encontrado el producto",
  *     }
  */
-app.get('/api/productos/sku/:sku', async function BuscarPorSku(req, res, next) {
+app.get('/api/productos/sku/:sku', async function buscarPorSku(req, res, next) {
     const { sku } = req.params;
     try {
         productos.findOne({ sku }).then((doc) => {
             if (doc) {
-                res.json({
+                return res.json({
                     doc,
                 });
             }
-            res.status(404).json({
+            return res.status(404).json({
                 error: 'No se ha encontrado el producto',
             });
+        });
+    } catch (error) {
+        next(error);
+    }
+});
+
+/**
+ * @api {post} /api/comprar Comprar por sku
+ * @apiName ComprarPorSkuyCantidad
+ * @apiGroup Productos
+ *
+ * @apiParam {String} sku               Código del producto.
+ * @apiParam {Number} cantidad          Cantidad requerida mayor a 0.
+ * @apiParam {String} id_cliente        Id de su empresa.
+ *
+ * @apiSuccessExample Success-Response:
+ *  HTTP/1.1 200 OK
+ *
+ *  {
+ *      mensaje: 'Venta realizada con éxito',
+ *      sku: 'ASD123',
+ *      cantidadComprada: 5,
+ *      stockDisponible: 995
+ *  }
+ *
+ *
+ * @apiError InvalidRequest La request no tiene la forma esperada.
+ *
+ * @apiErrorExample InvalidRequest:
+ *     HTTP/1.1 404 InvalidRequest
+ *     {
+ *       "error": "Datos enviados no válidos",
+ *     }
+ *
+ *
+ * @apiError ClienteNoEncontrado La key de cliente no es válida.
+ *
+ * @apiErrorExample ClienteNoEncontrado:
+ *     HTTP/1.1 404 ClienteNoEncontrado
+ *     {
+ *       "error": "No eres un cliente válido",
+ *     }
+ *
+ * @apiError ProductoNoEncontrado El sku de producto no es válida.
+ *
+ * @apiErrorExample ProductoNoEncontrado:
+ *     HTTP/1.1 404 ProductoNoEncontrado
+ *     {
+ *       "error": "No existe el producto especificado con ese SKU",
+ *     }
+ *
+ *
+ */
+app.post('/api/comprar', async function comprarPorSku(req, res, next) {
+    let schema = yup.object().shape({
+        sku: yup.string().required(),
+        cantidad: yup.number().required().positive().integer(),
+        key_cliente: yup.string().required(),
+    });
+
+    request_valida = await schema.isValid(req.body);
+
+    if (!request_valida) {
+        return res.json({
+            error: 'Datos enviados no válidos',
+        });
+    }
+
+    try {
+        const clienteEncontrado = await clientes.findOne({
+            id: req.body.key_cliente,
+        });
+        if (clienteEncontrado === null) {
+            response = {
+                error: 'No eres un cliente válido',
+            };
+            return res.json(response);
+        }
+
+        const productoEncontrado = await productos.findOne({
+            sku: req.body.sku,
+        });
+        if (productoEncontrado === null) {
+            response = {
+                error: 'No existe el producto especificado con ese SKU',
+            };
+            return res.json(response);
+        }
+
+        const nuevaCantidad = productoEncontrado.stock - req.body.cantidad;
+        const productoUpdateado = await productos.findOneAndUpdate(
+            { sku: req.body.sku },
+            {
+                $set: { stock: nuevaCantidad },
+            }
+        );
+
+        return res.json({
+            mensaje: 'Venta realizada con éxito',
+            sku: productoUpdateado.sku,
+            cantidadComprada: req.body.cantidad,
+            stockDisponible: productoUpdateado.stock,
         });
     } catch (error) {
         next(error);
